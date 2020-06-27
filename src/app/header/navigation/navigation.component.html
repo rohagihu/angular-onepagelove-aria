@@ -1,0 +1,48 @@
+<div class="collapse navbar-collapse" id="navbarsExampleDefault" *ngIf="navigationData.data">
+    <ul class="navbar-nav ml-auto">
+        <li
+            class="nav-item"
+            [class]="{'dropdown': navItem.children}"
+            *ngFor="let navItem of navigationData.data"
+        >
+            <a
+                class="nav-link page-scroll"
+                [class]="{'dropdown-toggle': navItem.children}"
+                [href]="navItem.target"
+                [id]="navItem.children ? 'navbarDropdown': null"
+                [attr.role]="navItem.children ? 'button' : null"
+                [attr.aria-haspopup]="navItem.children ? 'true' : null"
+                [attr.aria-expanded]="navItem.children ? 'false' : null"
+            >
+                {{navItem.name}}
+            </a>
+            <div
+                *ngIf="navItem.children"
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdown"
+            >
+                <ng-container
+                    *ngFor="let subNavItem of navItem.children; let i = index"
+                >
+                    <a class="dropdown-item" [href]="subNavItem.target">
+                        <span class="item-text">{{i + subNavItem.name }}</span>
+                    </a>
+                    <div *ngIf="i < navItem.children.length - 1" class="dropdown-items-divide-hr"></div>
+                </ng-container>
+
+            </div>
+
+        </li>
+    </ul>
+    <span class="nav-item social-icons" *ngIf="navigationData.social">
+        <span
+            class="fa-stack"
+            *ngFor="let socialNavItem of navigationData.social"
+        >
+            <a [href]="socialNavItem.target">
+                <span class="hexagon"></span>
+                <i class="fab fa-stack-1x" [class]="socialNavItem.bIcon"></i>
+            </a>
+        </span>
+    </span>
+</div>

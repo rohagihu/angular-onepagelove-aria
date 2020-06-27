@@ -40,6 +40,13 @@ export class DataService {
       )
   }
 
+  getNavigation(): Observable<any> {
+    return this.http.get<any>('assets/json/navigation.json')
+      .pipe(
+        catchError(this.handleError)
+      )
+  }
+
   private handleError(error: any) {
     console.error('server error:', error);
     if (error.error instanceof Error) {

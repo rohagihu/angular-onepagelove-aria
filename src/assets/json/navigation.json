@@ -1,0 +1,59 @@
+{
+  "data": [
+    {
+      "name": "Home",
+      "target": "#header"
+    },
+    {
+      "name": "Intro",
+      "target": "#intro"
+    },
+    {
+      "name": "Services",
+      "target": "#services"
+    },
+    {
+      "name": "Call Me",
+      "target": "#callMe"
+    },
+    {
+      "name": "Projects",
+      "target": "#projects"
+    },
+    {
+      "name": "About",
+      "target": "#about",
+      "children": [
+        {
+          "name": "Terms Conditions",
+          "target": "termins-conditions"
+        },
+        {
+          "name": "Privacy Policy",
+          "target": "privacy-policy"
+        }
+      ]
+    },
+    {
+      "name": "Contact",
+      "target": "#contact"
+    }
+  ],
+  "social": [
+    {
+      "name": "Facebook",
+      "bIcon": "fa-facebook-f",
+      "target": "#link"
+    },
+    {
+      "name": "Twitter",
+      "bIcon": "fa-twitter",
+      "target": "#link"
+    },
+    {
+      "name": "Instagram",
+      "bIcon": "fa-instagram",
+      "target": "#link"
+    }
+  ]
+}
