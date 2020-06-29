@@ -16,7 +16,7 @@ export class NavigationComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.navigationData)
+    console.log(this.navigationData);
     // this.dataService.getNavigation()
     //   .subscribe((data: any) => {
     //     this.navigationData = data;

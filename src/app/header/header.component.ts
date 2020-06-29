@@ -9,7 +9,7 @@ import { DataService } from '../core/data.service';
 })
 export class HeaderComponent implements OnInit {
 
-  navigationData: any = {}
+  navigationData: any = {};
 
   constructor(private dataService: DataService) { }
 
