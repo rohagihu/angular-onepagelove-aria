@@ -1,14 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../core/data.service';
 
-interface IStage {
-  headline: string,
-  headlineOptions: [],
-  subheadline: string,
-  buttonLabel: string,
-  buttonTarget: string
-};
-
+import { IStage } from '../shared/interfaces';
 
 @Component({
   selector: 'app-stage',

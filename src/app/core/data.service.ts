@@ -4,17 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { catchError } from 'rxjs/operators'
 
-// import { Observable } from 'rxjs';
-
-
-
-interface IStage {
-  headline: string,
-  headlineOptions: [],
-  subheadline: string,
-  buttonLabel: string,
-  buttonTarget: string
-};
+import { IStage } from '../shared/interfaces';
 
 @Injectable()
 
