@@ -9,6 +9,7 @@ import { StageComponent } from './stage/stage.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainModule } from './main/main.module';
 import { CoreModule } from './core/core.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CoreModule } from './core/core.module';
     AppRoutingModule,
     MainModule,
     CoreModule,
-    HeaderModule
+    HeaderModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

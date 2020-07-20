@@ -25,7 +25,7 @@
                     *ngFor="let subNavItem of navItem.children; let i = index"
                 >
                     <a class="dropdown-item" [href]="subNavItem.target">
-                        <span class="item-text">{{i + subNavItem.name }}</span>
+                        <span class="item-text">{{ subNavItem.name }}</span>
                     </a>
                     <div *ngIf="i < navItem.children.length - 1" class="dropdown-items-divide-hr"></div>
                 </ng-container>
